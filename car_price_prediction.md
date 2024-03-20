@@ -89,7 +89,7 @@ df.nunique()
 # column names of the dataframe
 df.columns
 ```
-Data Selection:
+### Data Selection:
 Selects numerical columns for analysis.
 ```python
 numerical_columns = ['wheelbase', 'enginesize', 'boreratio', 'stroke', 'compressionratio', 'horsepower', 'peakrpm', 'citympg']
@@ -107,6 +107,8 @@ x = new_df['enginesize']
 y = new_df['price']
 ```
 ### Comparing Engine Size and Fuel Type with Price using Scatter Plot
+<img src="picture/2.1.png" width="500" alt="">
+<img src="picture/2.2.png" width="500" alt="">
 
 ### Splitting Data:
 Splits the data into training and testing sets.
@@ -131,51 +133,77 @@ Visualizes the relationship between actual and predicted prices.
 Plotting Regression Model Line:
 Plots the regression line to visualize the model's fit.
 
+<img src="picture/2.3.png" width="500" alt="">
+
 Predicting Prices based on Engine Size:
 Generates predicted prices based on engine size.
 
-Engine Size	Predicted Price
-91	7339.34
-161	18841.42
-136	14733.53
-61	2409.87
-109	10297.01
-146	16376.69
-92	7503.65
-92	7503.65
-181	22127.73
-92	7503.65
-164	19334.36
-203	25742.67
-70	3888.71
-134	14404.90
-90	7175.02
-146	16376.69
-132	14076.27
-136	14733.53
-110	10461.33
-92	7503.65
-110	10461.33
-120	12104.48
-132	14076.27
-146	16376.69
-171	20484.57
-97	8325.23
-98	8489.54
-120	12104.48
-98	8489.54
-97	8325.23
-109	10297.01
-109	10297.01
-151	17198.26
-122	12433.11
-97	8325.23
-209	26728.56
-109	10297.01
-121	12268.80
-90	7175.02
-304	42338.53
-90	7175.02
+<img src="picture/2.4.png" width="500" alt="">
+
+### Predicting Prices based on Engine Size:
+Generates predicted prices based on engine size.
+| Engine Size | Predicted Price |
+|-------------|-----------------|
+| 91          | 7339.34         |
+| 161         | 18841.42        |
+| 136         | 14733.53        |
+| 61          | 2409.87         |
+| 109         | 10297.01        |
+| 146         | 16376.69        |
+| 92          | 7503.65         |
+| 92          | 7503.65         |
+| 181         | 22127.73        |
+| 92          | 7503.65         |
+| 164         | 19334.36        |
+| 203         | 25742.67        |
+| 70          | 3888.71         |
+| 134         | 14404.90        |
+| 90          | 7175.02         |
+| 146         | 16376.69        |
+| 132         | 14076.27        |
+| 136         | 14733.53        |
+| 110         | 10461.33        |
+| 92          | 7503.65         |
+| 110         | 10461.33        |
+| 120         | 12104.48        |
+| 132         | 14076.27        |
+| 146         | 16376.69        |
+| 171         | 20484.57        |
+| 97          | 8325.23         |
+| 98          | 8489.54         |
+| 120         | 12104.48        |
+| 98          | 8489.54         |
+| 97          | 8325.23         |
+| 109         | 10297.01        |
+| 109         | 10297.01        |
+| 151         | 17198.26        |
+| 122         | 12433.11        |
+| 97          | 8325.23         |
+| 209         | 26728.56        |
+| 109         | 10297.01        |
+| 121         | 12268.80        |
+| 90          | 7175.02         |
+| 304         | 42338.53        |
+| 90          | 7175.02         |
+
+## 6. Insights and Model Efficacy
+The comprehensive analysis and deployment of a linear regression model have culminated in a predictive framework adept at forecasting car prices with engine size as the primary variable. Key takeaways from this endeavor include:
+
+**Critical Findings:**
+
+- **Significance of Engine Size:** The analysis confirms that engine size is paramount in predicting car prices. It registers the highest correlation with the car's price over other assessed numerical features.
+- **Model Efficacy:** Demonstrating an R-squared value close to 0.78, the linear regression model achieves commendable predictive performance. This metric indicates that the model accounts for a significant proportion of the price variability, showcasing its predictive precision.
+
+- **Predictive Insights:** Despite the natural price variations in the automotive market, the model closely approximates real-world prices. The accuracy of the model, as supported by both evaluation metrics and visual plots, underscores its utility in forecasting prices based on engine size, aiding stakeholders in informed decision-making.
+
+The diligent analytical and modeling processes have yielded a dependable framework for accurately forecasting car prices, with engine size identified as a crucial factor.
+
+## 7. Project Wrap-up
+This initiative has successfully forged a predictive model that emphasizes the pivotal role of engine size in determining car prices. This revelation underscores engine size as a crucial consideration for both purchasers and vendors in the automotive sector.
+
+Looking ahead, there's potential for further refinement and enhancement of the model to elevate its accuracy and extend its relevance. Introducing more features and applying sophisticated modeling techniques could unravel additional layers of the intricate car pricing landscape.
+
+In essence, the developed predictive model stands as a strategic asset for the automotive industry's stakeholders, offering actionable insights to guide pricing strategies, support decision-making, and ultimately, amplify operational efficiency and market effectiveness.
 
 
 
