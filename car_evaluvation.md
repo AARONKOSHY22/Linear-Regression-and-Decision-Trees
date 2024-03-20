@@ -62,9 +62,9 @@ accuracy = accuracy_score(y_test, predictions)
 print(f'Accuracy: {accuracy:.4f}')
 ```
 ## Decision Tree Visualization:
-
+<img src="picture/1.1.png" width="500" alt="">
 ## Decision Tree Accuracy vs. Min Samples Split
-
+<img src="picture/1.2.png" width="500" alt="">
 ## Insights and Findings
 Our findings elucidate that classifier accuracy escalates with increased tree depth.
 A consistent accuracy rate was observed for a tree depth of 3, regardless of the minimum samples split.
